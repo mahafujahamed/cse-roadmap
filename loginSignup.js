@@ -1,7 +1,5 @@
-// Function to handle user signup
 function signUp() {
     const firstName = document.getElementById('first-name').value;
-    const lastName = document.getElementById('last-name').value;
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
 
@@ -12,15 +10,18 @@ function signUp() {
     }
 
     // Store user data in local storage (not secure for production)
-    const userData = { firstName, lastName, email, password };
+    const userData = { firstName, email, password };
     localStorage.setItem(email, JSON.stringify(userData));
     alert('Signup successful. You can now log in.');
 
-    // Redirect to index.html after successful signup
+    // Clear the signup form fields after successful signup
+    document.getElementById('first-name').value = '';
+    document.getElementById('signup-email').value = '';
+    document.getElementById('signup-password').value = '';
+
     window.location.href = "index.html";
 }
 
-// Function to handle user login
 function logIn() {
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
@@ -30,8 +31,8 @@ function logIn() {
 
     // Check if user exists and the password is correct
     if (userData && userData.password === password) {
-        alert(`Welcome, ${userData.firstName} ${userData.lastName}!`);
-        
+        alert(`Welcome, ${userData.firstName}!`);
+
         // Redirect to index.html after successful login
         window.location.href = "index.html";
     } else {

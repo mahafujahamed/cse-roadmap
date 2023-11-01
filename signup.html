@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +7,51 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>SignUp</title>
 </head>
-
 <body>
     <div class="hero min-h-screen" style="background-image: url(images/login-bg.jpg);">
         <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form  id="signup-form" onsubmit="signUp(); return false;"  class="card-body">
-                <div class="form-control">
-                    <div class="flex justify-center items-center">
-                        <a href="index.html"><img src="images/logo.png" alt=""></a>
-                    </div>
-                    <h1 class="text-center text-3xl font-serif text-cyan-600">Create your Account</h1>
+            <div class="card-body">
+                <div class="flex justify-center items-center">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <h1 class="text-center text-3xl font-serif text-cyan-600">Create your Account</h1>
+                <form id="signup-form" class="form-control">
+                    <!-- Signup form inputs and labels -->
                     <label class="label">
                         <span class="label-text">Name</span>
                     </label>
                     <input type="text" id="first-name" placeholder="Name" class="input input-bordered" />
-                </div>
-                <div class="form-control">
+    
                     <label class="label">
                         <span class="label-text">Email</span>
                     </label>
                     <input type="text" id="signup-email" placeholder="Email" class="input input-bordered" />
+    
                     <label class="label">
                         <span class="label-text">Password</span>
                     </label>
-                    <input type="text" id="signup-password" placeholder="password" class="input input-bordered" />
-
-                </div>
-                <div class="form-control mt-5 mb-4">
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                </div>
+                    <input type="password" id="signup-password" placeholder="Password" class="input input-bordered" />
+    
+                    <div class="form-control mt-5 mb-4">
+                        <button type="button" onclick="signUp()" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </form>
                 <div class="flex justify-center items-center gap-5 mb-4">
                     <img src="images/facebook.png" alt="">
                     <img src="images/google.png" alt="">
                     <img src="images/github.png" alt="">
                     <img src="images/linkedin.png" alt="">
                 </div>
+                <!-- ... (social media login buttons, etc.) ... -->
                 <hr>
                 <div>
                     <label class="label">
-                        <p>Already have an account? please <a href="join.html"
-                                class="label-text-alt link link-hover">Login?</a></p>
+                        <p>Already have an account? Please <a href="join.html" class="label-text-alt link link-hover">Login?</a></p>
                     </label>
                 </div>
-            </form>
+            </div>
         </div>
-        <script src="loginSignup.js"></script>
+    </div>
+    <script src="loginSignup.js"></script>
 </body>
-
 </html>

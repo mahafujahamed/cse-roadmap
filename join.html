@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +7,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Cse Roadmap</title>
 </head>
-
 <body>
     <div class="hero min-h-screen" style="background-image: url(images/login-bg.jpg);">
         <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form class="card-body">
-                <div class="form-control">
-                    <div class="flex justify-center items-center">
-                       <a href="index.html"><img src="images/logo.png" alt=""></a>
-                    </div>
-                    <h1 class="text-center text-3xl font-serif text-cyan-600">Login Now!</h1>
+            <div class="card-body">
+                <div class="flex justify-center items-center">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <h1 class="text-center text-3xl font-serif text-cyan-600">Create your Account</h1>
+                <form id="login-form" class="form-control">
+                    <!-- Login form inputs and labels -->
                     <label class="label">
                         <span class="label-text">Email</span>
                     </label>
-                    <input type="text" placeholder="email" class="input input-bordered" />
-                </div>
-                <div class="form-control">
+                    <input type="text" id="login-email" placeholder="Email" class="input input-bordered" />
+                
                     <label class="label">
                         <span class="label-text">Password</span>
                     </label>
-                    <input type="text" placeholder="password" class="input input-bordered" />
-                    <label class="label">
-                        <p>New to this website? please <a href="signup.html" class="label-text-alt link link-hover">Sign up?</a></p>
-                    </label>
-                </div>
-                <div class="form-control mt-6 mb-4">
-                    <button class="btn btn-primary">Login</button>
-                </div>
-                <div class="flex justify-center items-center gap-5">
+                    <input type="password" id="login-password" placeholder="Password" class="input input-bordered" />
+                
+                    <div class="form-control mt-5 mb-4">
+                        <button type="button" onclick="logIn()" class="btn btn-primary">Log In</button>
+                    </div>
+                </form>
+                <div class="flex justify-center items-center gap-5 mb-4">
                     <img src="images/facebook.png" alt="">
                     <img src="images/google.png" alt="">
                     <img src="images/github.png" alt="">
                     <img src="images/linkedin.png" alt="">
                 </div>
-            </form>
+                <!-- ... (social media login buttons, etc.) ... -->
+                <hr>
+                <div>
+                    <label class="label">
+                        <p>New to this website? Please <a href="signup.html" class="label-text-alt link link-hover">Signup?</a></p>
+                    </label>
+                </div>
+            </div>
         </div>
+    </div>
+    <script src="loginSignup.js"></script>
 </body>
-
 </html>
