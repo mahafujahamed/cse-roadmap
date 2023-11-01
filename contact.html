@@ -11,7 +11,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="navbar">
+    <div class="navbar bg-base-100">
         <div class="navbar-start">
             <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -21,8 +21,9 @@
                             d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
-                    <li><a href="index.html">Home</a></li>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
                     <li>
                         <a>Parent</a>
                         <ul class="p-2">
@@ -34,7 +35,8 @@
                 </ul>
             </div>
             <img src="images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl"><span class="text-rose-700">Cse</span>Roadmap</a>
+            <a class="btn btn-ghost normal-case text-xl"><span class="text-rose-700">Cse</span><span
+                    class="text-lime-500">Roadmap</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -42,16 +44,17 @@
                 <li><a href=""></a></li>
                 <li tabindex="0">
                     <details>
-                        <summary>Inventory</summary>
+                        <summary>Learning Paths</summary>
                         <ul class="p-2">
-                            <li><a>Create</a></li>
-                            <li><a>Submenu 2</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="resources.html">Resources</a></li>
                         </ul>
                     </details>
                 </li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community</a></li>
             </ul>
         </div>
         <div class="navbar-end">
@@ -113,20 +116,19 @@
     </section>
    
     <!-- Footer -->
-    <footer class="footer p-10 bg-base-200 text-base-content">
+    <footer class="footer p-10 bg-base-200 text-base-content mt-5">
         <div>
             <span class="footer-title">Services</span>
-            <a class="link link-hover">Branding</a>
+            <a href="resources.html" class="link link-hover">Resources</a>
             <a class="link link-hover">Design</a>
-            <a class="link link-hover">Marketing</a>
             <a class="link link-hover">Advertisement</a>
+            <a class="link link-hover">Web development</a>
         </div>
         <div>
             <span class="footer-title">Company</span>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Blog</a>
-            <a class="link link-hover">Jobs</a>
+            <a href="community.html" class="link link-hover">Community</a>
+            <a href="contact.html" class="link link-hover">Contact</a>
+            <a href="blog.html" class="link link-hover">Blog</a>
         </div>
         <div>
             <span class="footer-title">Legal</span>
@@ -136,14 +138,20 @@
         </div>
         <div>
             <span class="footer-title">Newsletter</span>
+            <div class="flex justify-center items-center gap-5 mb-4 mt-4">
+                <a href="https://www.facebook.com/mahafujahamed.dev"><img src="images/facebook.png"></a>
+                <a href="https://developers.google.com/profile/u/mahafuj"><img src="images/google.png" alt=""></a>
+                <a href="https://github.com/Duplicate-Yours"><img src="images/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/mahafuj-python/"><img src="images/linkedin.png" alt=""></a>
+            </div>
             <div class="form-control w-80">
                 <label class="label">
                     <span class="label-text">Enter your email address</span>
                 </label>
                 <div class="relative">
                     <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
-                    <button onclick="alert('Thank you for subscribing!')"
-                        class="btn bg-cyan-50 shadow-lg  shadow-cyan-500/50 absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                    <button onclick="alert('Thanks for subscribing!')"
+                        class="btn bg-cyan-500 shadow-lg  shadow-cyan-500/50 absolute top-0 right-0 rounded-l-none">Subscribe</button>
                 </div>
             </div>
         </div>

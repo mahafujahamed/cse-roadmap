@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>CSE Roadmap</title>
+    <title>CSERoadmap Blog</title>
 </head>
 
 <body>
@@ -44,18 +44,17 @@
                 <li><a href=""></a></li>
                 <li tabindex="0">
                     <details>
-                        <summary>Technology</summary>
+                        <summary>Learning Paths</summary>
                         <ul class="p-2">
-                            <li><a>Computing</a></li>
-                            <li><a>Programming</a></li>
-                            <li><a>Programming</a></li>
-                            <li><a>Programming</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="resources.html">Resources</a></li>
                         </ul>
                     </details>
                 </li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community</a></li>
             </ul>
         </div>
         <div class="navbar-end">
@@ -208,20 +207,19 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="footer p-10 bg-base-200 text-base-content mt-8">
+    <footer class="footer p-10 bg-base-200 text-base-content mt-5">
         <div>
             <span class="footer-title">Services</span>
-            <a class="link link-hover">Branding</a>
+            <a href="resources.html" class="link link-hover">Resources</a>
             <a class="link link-hover">Design</a>
-            <a class="link link-hover">Marketing</a>
             <a class="link link-hover">Advertisement</a>
+            <a class="link link-hover">Web development</a>
         </div>
         <div>
             <span class="footer-title">Company</span>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Jobs</a>
-            <a class="link link-hover">Press kit</a>
+            <a href="community.html" class="link link-hover">Community</a>
+            <a href="contact.html" class="link link-hover">Contact</a>
+            <a href="blog.html" class="link link-hover">Blog</a>
         </div>
         <div>
             <span class="footer-title">Legal</span>
@@ -231,13 +229,20 @@
         </div>
         <div>
             <span class="footer-title">Newsletter</span>
+            <div class="flex justify-center items-center gap-5 mb-4 mt-4">
+                <a href="https://www.facebook.com/mahafujahamed.dev"><img src="images/facebook.png"></a>
+                <a href="https://developers.google.com/profile/u/mahafuj"><img src="images/google.png" alt=""></a>
+                <a href="https://github.com/Duplicate-Yours"><img src="images/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/mahafuj-python/"><img src="images/linkedin.png" alt=""></a>
+            </div>
             <div class="form-control w-80">
                 <label class="label">
                     <span class="label-text">Enter your email address</span>
                 </label>
                 <div class="relative">
                     <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
-                    <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                    <button onclick="alert('Thanks for subscribing!')"
+                        class="btn bg-cyan-500 shadow-lg  shadow-cyan-500/50 absolute top-0 right-0 rounded-l-none">Subscribe</button>
                 </div>
             </div>
         </div>

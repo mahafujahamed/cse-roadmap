@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,101 @@
     <title>CSERoadmap community</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
 
-<style>
-    /* Custom styles for FAQ section */
-    .faq-container {
-        @apply mx-auto py-12;
-    }
+    <style>
+        /* Custom styles for FAQ section */
+        .faq-container {
+            @apply mx-auto py-12;
+        }
 
-    .faq-item {
-        @apply bg-white rounded-lg p-6 shadow-md;
-    }
+        .faq-item {
+            @apply bg-white rounded-lg p-6 shadow-md;
+        }
 
-    /* Custom styles for data postcard */
-    .data-postcard {
-        @apply bg-blue-500 text-white p-4 rounded-lg shadow-lg;
-    }
+        /* Custom styles for data postcard */
+        .data-postcard {
+            @apply bg-blue-500 text-white p-4 rounded-lg shadow-lg;
+        }
 
-    /* Custom styles for chatbox */
-    .chat-container {
-        @apply h-64 overflow-y-auto;
-    }
+        /* Custom styles for chatbox */
+        .chat-container {
+            @apply h-64 overflow-y-auto;
+        }
 
-    /* Custom styles for chat bubble */
-    .chat-bubble {
-        @apply inline-block my-2 p-2 rounded-lg shadow-sm;
-    }
+        /* Custom styles for chat bubble */
+        .chat-bubble {
+            @apply inline-block my-2 p-2 rounded-lg shadow-sm;
+        }
 
-    .user-message {
-        @apply bg-blue-500 text-white;
-    }
+        .user-message {
+            @apply bg-blue-500 text-white;
+        }
 
-    .other-message {
-        @apply bg-gray-200 text-gray-800;
-    }
-
-</style>
+        .other-message {
+            @apply bg-gray-200 text-gray-800;
+        }
+    </style>
 
 </head>
+
 <body>
-    <!--community experts  -->
+    <!-- navbar -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <img src="images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-xl"><span class="text-rose-700">Cse</span><span
+                    class="text-lime-500">Roadmap</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href=""></a></li>
+                <li tabindex="0">
+                    <details>
+                        <summary>Learning Paths</summary>
+                        <ul class="p-2">
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="join.html" class="btn">Join Now</a>
+        </div>
+    </div>
+    <!--header -->
     <section>
         <div class="hero min-h-screen" style="background-image: url(images/community/community-home.jpg);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold"><span
-                            class="text-[#54dc91] text-8xl font-serif">Discover</span>
+                    <h1 class="mb-5 text-5xl font-bold"><span class="text-[#54dc91] text-8xl font-serif">Discover</span>
                         the best community that
                         fit your needs</h1>
                     <p class="mb-5">Fostering connections, sharing knowledge, and building relationships in a
@@ -65,7 +116,7 @@
         </div>
         <!-- header end -->
         <!-- community cards -->
-        <div class=" container mx-auto flex gap-5">
+        <div class="container mx-auto flex gap-5">
             <div class="animate-bounce">
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -108,160 +159,165 @@
             </div>
         </div>
     </section>
-   <!-- Community Posts -->
-<div class="mb-4">
-    <h2 class="text-xl font-bold mb-2">Latest Posts</h2>
-    <!-- Example post cards with comments -->
-    <div class="bg-gray-200 p-4 m-2">
-        <h3 class="text-lg font-semibold mb-2">Post Title 1</h3>
-        <p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="mt-2">
-            <h4 class="text-md font-semibold mb-1">Comments</h4>
-            <div class="bg-gray-100 p-2">
-                <p>Comment 1: Lorem ipsum dolor sit amet.</p>
+    <!-- Community Posts -->
+    <div class="mb-4">
+        <h2 class="text-xl font-bold mb-2">Latest Posts</h2>
+        <!-- Example post cards with comments -->
+        <div class="bg-gray-200 p-4 m-2">
+            <h3 class="text-lg font-semibold mb-2">Post Title 1</h3>
+            <p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-2">
+                <h4 class="text-md font-semibold mb-1">Comments</h4>
+                <div class="bg-gray-100 p-2">
+                    <p>Comment 1: Lorem ipsum dolor sit amet.</p>
+                </div>
+                <!-- Add more comments dynamically -->
             </div>
-            <!-- Add more comments dynamically -->
+        </div>
+        <!-- Add more post cards with comments dynamically -->
+    </div>
+    <!-- User Profiles -->
+    <div class="mb-4">
+        <h2 class="text-xl font-bold mb-2">Featured Members</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Example user profile cards -->
+            <div class="bg-gray-200 p-4">
+                <h3 class="text-lg font-semibold">User 1</h3>
+                <p>Web Developer</p>
+                <!-- Add more user details as needed -->
+            </div>
+            <div class="bg-gray-200 p-4">
+                <h3 class="text-lg font-semibold">User 2</h3>
+                <p>Designer</p>
+            </div>
+            <div class="bg-gray-200 p-4">
+                <h3 class="text-lg font-semibold">User 3</h3>
+                <p>Software Engineer</p>
+            </div>
+            <!-- Add more user profile cards dynamically -->
         </div>
     </div>
-    <!-- Add more post cards with comments dynamically -->
-</div>
-<!-- User Profiles -->
-<div class="mb-4">
-    <h2 class="text-xl font-bold mb-2">Featured Members</h2>
-    <div class="grid grid-cols-3 gap-4">
-        <!-- Example user profile cards -->
+    <!-- Community Events -->
+    <div class="mb-4">
+        <h2 class="text-xl font-bold mb-2">Upcoming Events</h2>
+        <!-- Example event cards -->
         <div class="bg-gray-200 p-4">
-            <h3 class="text-lg font-semibold">User 1</h3>
-            <p>Web Developer</p>
-            <!-- Add more user details as needed -->
+            <h3 class="text-lg font-semibold">Event Title 1</h3>
+            <p>Date: January 15, 2023</p>
+            <p>Location: Event Venue</p>
+            <!-- Add more event details as needed -->
         </div>
         <div class="bg-gray-200 p-4">
-            <h3 class="text-lg font-semibold">User 2</h3>
-            <p>Designer</p>
+            <h3 class="text-lg font-semibold">Event Title 2</h3>
+            <p>Date: February 5, 2023</p>
+            <p>Location: Another Venue</p>
         </div>
-        <div class="bg-gray-200 p-4">
-            <h3 class="text-lg font-semibold">User 3</h3>
-            <p>Software Engineer</p>
-        </div>
-        <!-- Add more user profile cards dynamically -->
+        <!-- Add more event cards dynamically -->
     </div>
-</div>
-<!-- Community Events -->
-<div class="mb-4">
-    <h2 class="text-xl font-bold mb-2">Upcoming Events</h2>
-    <!-- Example event cards -->
-    <div class="bg-gray-200 p-4">
-        <h3 class="text-lg font-semibold">Event Title 1</h3>
-        <p>Date: January 15, 2023</p>
-        <p>Location: Event Venue</p>
-        <!-- Add more event details as needed -->
-    </div>
-    <div class="bg-gray-200 p-4">
-        <h3 class="text-lg font-semibold">Event Title 2</h3>
-        <p>Date: February 5, 2023</p>
-        <p>Location: Another Venue</p>
-    </div>
-    <!-- Add more event cards dynamically -->
-</div>
-<!-- FAQ section -->
-<div>
-    <div class="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" checked="checked" /> 
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+    <!-- FAQ section -->
+    <div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+                <p>hello</p>
+            </div>
         </div>
-        <div class="collapse-content"> 
-          <p>hello</p>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+                <p>hello</p>
+            </div>
         </div>
-      </div>
-      <div class="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" /> 
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content"> 
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" /> 
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content"> 
-          <p>hello</p>
-        </div>
-      </div>
-</div>
-
-<div class="container mx-auto py-12">
-    <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- FAQ Item 1 -->
-        <div class="bg-white rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-4">Question 1?</h3>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-            <button class="text-blue-500 hover:underline">Read More</button>
-        </div>
-
-        <!-- FAQ Item 2 -->
-        <div class="bg-white rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-4">Question 2?</h3>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-            <button class="text-blue-500 hover:underline">Read More</button>
-        </div>
-
-        <!-- Add more FAQ items as needed -->
-    </div>
-</div>
-<!-- community chat -->
-<div class="container mx-auto py-12">
-    <div id="chatbox" class="max-w-lg mx-auto border rounded-lg overflow-hidden">
-        <div class="chat-container p-4" id="chat-container">
-            <!-- Chat messages will be appended here -->
-        </div>
-        <div class="flex items-center p-4">
-            <input id="message-input" type="text" placeholder="Type your message..." class="flex-1 border rounded-l-full py-2 px-4">
-            <button id="send-button" class="bg-blue-500 hover:bg-blue-600 text-white rounded-r-full px-6 py-2">Send</button>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+                <p>hello</p>
+            </div>
         </div>
     </div>
-</div>
-<!-- script community chat -->
-<script>
-    // JavaScript code
-document.addEventListener("DOMContentLoaded", function() {
-    const chatContainer = document.getElementById("chat-container");
-    const messageInput = document.getElementById("message-input");
-    const sendButton = document.getElementById("send-button");
 
-    sendButton.addEventListener("click", function() {
-        const messageText = messageInput.value.trim();
+    <div class="container mx-auto py-12">
+        <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Question 1?</h3>
+                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                    mauris.</p>
+                <button class="text-blue-500 hover:underline">Read More</button>
+            </div>
 
-        if (messageText !== "") {
-            const chatBubble = document.createElement("div");
-            chatBubble.textContent = messageText;
-            chatBubble.classList.add("chat-bubble", "user-message");
-            chatContainer.appendChild(chatBubble);
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Question 2?</h3>
+                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui
+                    mauris.</p>
+                <button class="text-blue-500 hover:underline">Read More</button>
+            </div>
+
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+    <!-- community chat -->
+    <div class="container mx-auto py-12">
+        <div id="chatbox" class="max-w-lg mx-auto border rounded-lg overflow-hidden">
+            <div class="chat-container p-4" id="chat-container">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="flex items-center p-4">
+                <input id="message-input" type="text" placeholder="Type your message..."
+                    class="flex-1 border rounded-l-full py-2 px-4">
+                <button id="send-button"
+                    class="bg-blue-500 hover:bg-blue-600 text-white rounded-r-full px-6 py-2">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- script community chat -->
+    <script>
+        // JavaScript code
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatContainer = document.getElementById("chat-container");
+            const messageInput = document.getElementById("message-input");
+            const sendButton = document.getElementById("send-button");
+
+            sendButton.addEventListener("click", function () {
+                const messageText = messageInput.value.trim();
+
+                if (messageText !== "") {
+                    const chatBubble = document.createElement("div");
+                    chatBubble.textContent = messageText;
+                    chatBubble.classList.add("chat-bubble", "user-message");
+                    chatContainer.appendChild(chatBubble);
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+
+                    // Simulate receiving a response after a short delay (for demonstration purposes)
+                    setTimeout(function () {
+                        const responseBubble = document.createElement("div");
+                        responseBubble.textContent = "This is a sample response.";
+                        responseBubble.classList.add("chat-bubble", "other-message");
+                        chatContainer.appendChild(responseBubble);
+                        chatContainer.scrollTop = chatContainer.scrollHeight;
+                    }, 1000);
+
+                    // Clear the message input
+                    messageInput.value = "";
+                }
+            });
+
+            // Scroll to the bottom of the chatbox when new messages are added
             chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
 
-            // Simulate receiving a response after a short delay (for demonstration purposes)
-            setTimeout(function() {
-                const responseBubble = document.createElement("div");
-                responseBubble.textContent = "This is a sample response.";
-                responseBubble.classList.add("chat-bubble", "other-message");
-                chatContainer.appendChild(responseBubble);
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-            }, 1000);
-
-            // Clear the message input
-            messageInput.value = "";
-        }
-    });
-
-    // Scroll to the bottom of the chatbox when new messages are added
-    chatContainer.scrollTop = chatContainer.scrollHeight;
-});
-
-</script>
+    </script>
 </body>
+
 </html>
