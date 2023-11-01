@@ -3,9 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cse Roadmap</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CSERoadmap community</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+
+<style>
+    /* Custom styles for FAQ section */
+    .faq-container {
+        @apply mx-auto py-12;
+    }
+
+    .faq-item {
+        @apply bg-white rounded-lg p-6 shadow-md;
+    }
+
+    /* Custom styles for data postcard */
+    .data-postcard {
+        @apply bg-blue-500 text-white p-4 rounded-lg shadow-lg;
+    }
+
+    /* Custom styles for chatbox */
+    .chat-container {
+        @apply h-64 overflow-y-auto;
+    }
+
+    /* Custom styles for chat bubble */
+    .chat-bubble {
+        @apply inline-block my-2 p-2 rounded-lg shadow-sm;
+    }
+
+    .user-message {
+        @apply bg-blue-500 text-white;
+    }
+
+    .other-message {
+        @apply bg-gray-200 text-gray-800;
+    }
+
+</style>
+
 </head>
 <body>
-    
+    <!--community experts  -->
+    <section>
+        <div class="hero min-h-screen" style="background-image: url(images/community/community-home.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold"><span
+                            class="text-[#54dc91] text-8xl font-serif">Discover</span>
+                        the best community that
+                        fit your needs</h1>
+                    <p class="mb-5">Fostering connections, sharing knowledge, and building relationships in a
+                        vibrant
+                        and inclusive community.</p>
+                    <a href="index.html"> <button class="btn btn-primary">View More <img class="animate-spin"
+                                src="images/eye-spin.png" alt=""></button></a>
+                </div>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- community cards -->
+        <div class=" container mx-auto flex gap-5">
+            <div class="animate-bounce">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/community/download.jpeg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-serif font-semibold text-rose-700">About Our Community <img
+                                class="animate-spin" src="images/home-spin.png" alt=""></h2>
+                        <p>Welcome to our thriving community, where diverse minds unite.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-bounce">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/community/card-1.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-serif font-semibold text-rose-700">Improving Life <img
+                                class="animate-spin" src="images/home-spin.png" alt=""></h2>
+                        <p>It is great way for you to make use of all the benefits of being a part. Engage in
+                            meaningful
+                            discussions, gain insights, and cultivate lasting connections.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-bounce">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/community/card-2.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-serif font-semibold text-rose-700">Relationship <img
+                                class="animate-spin" src="images/home-spin.png" alt=""></h2>
+                        <p>Grow your communication skils. Together, we learn, grow, and shape a brighter future.
+                            Happy
+                            Realationship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Community Posts -->
+<div class="mb-4">
+    <h2 class="text-xl font-bold mb-2">Latest Posts</h2>
+    <!-- Example post cards with comments -->
+    <div class="bg-gray-200 p-4 m-2">
+        <h3 class="text-lg font-semibold mb-2">Post Title 1</h3>
+        <p>Post content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="mt-2">
+            <h4 class="text-md font-semibold mb-1">Comments</h4>
+            <div class="bg-gray-100 p-2">
+                <p>Comment 1: Lorem ipsum dolor sit amet.</p>
+            </div>
+            <!-- Add more comments dynamically -->
+        </div>
+    </div>
+    <!-- Add more post cards with comments dynamically -->
+</div>
+<!-- User Profiles -->
+<div class="mb-4">
+    <h2 class="text-xl font-bold mb-2">Featured Members</h2>
+    <div class="grid grid-cols-3 gap-4">
+        <!-- Example user profile cards -->
+        <div class="bg-gray-200 p-4">
+            <h3 class="text-lg font-semibold">User 1</h3>
+            <p>Web Developer</p>
+            <!-- Add more user details as needed -->
+        </div>
+        <div class="bg-gray-200 p-4">
+            <h3 class="text-lg font-semibold">User 2</h3>
+            <p>Designer</p>
+        </div>
+        <div class="bg-gray-200 p-4">
+            <h3 class="text-lg font-semibold">User 3</h3>
+            <p>Software Engineer</p>
+        </div>
+        <!-- Add more user profile cards dynamically -->
+    </div>
+</div>
+<!-- Community Events -->
+<div class="mb-4">
+    <h2 class="text-xl font-bold mb-2">Upcoming Events</h2>
+    <!-- Example event cards -->
+    <div class="bg-gray-200 p-4">
+        <h3 class="text-lg font-semibold">Event Title 1</h3>
+        <p>Date: January 15, 2023</p>
+        <p>Location: Event Venue</p>
+        <!-- Add more event details as needed -->
+    </div>
+    <div class="bg-gray-200 p-4">
+        <h3 class="text-lg font-semibold">Event Title 2</h3>
+        <p>Date: February 5, 2023</p>
+        <p>Location: Another Venue</p>
+    </div>
+    <!-- Add more event cards dynamically -->
+</div>
+<!-- FAQ section -->
+<div>
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content"> 
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content"> 
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content"> 
+          <p>hello</p>
+        </div>
+      </div>
+</div>
+
+<div class="container mx-auto py-12">
+    <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- FAQ Item 1 -->
+        <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Question 1?</h3>
+            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+            <button class="text-blue-500 hover:underline">Read More</button>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Question 2?</h3>
+            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+            <button class="text-blue-500 hover:underline">Read More</button>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+    </div>
+</div>
+<!-- community chat -->
+<div class="container mx-auto py-12">
+    <div id="chatbox" class="max-w-lg mx-auto border rounded-lg overflow-hidden">
+        <div class="chat-container p-4" id="chat-container">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div class="flex items-center p-4">
+            <input id="message-input" type="text" placeholder="Type your message..." class="flex-1 border rounded-l-full py-2 px-4">
+            <button id="send-button" class="bg-blue-500 hover:bg-blue-600 text-white rounded-r-full px-6 py-2">Send</button>
+        </div>
+    </div>
+</div>
+<!-- script community chat -->
+<script>
+    // JavaScript code
+document.addEventListener("DOMContentLoaded", function() {
+    const chatContainer = document.getElementById("chat-container");
+    const messageInput = document.getElementById("message-input");
+    const sendButton = document.getElementById("send-button");
+
+    sendButton.addEventListener("click", function() {
+        const messageText = messageInput.value.trim();
+
+        if (messageText !== "") {
+            const chatBubble = document.createElement("div");
+            chatBubble.textContent = messageText;
+            chatBubble.classList.add("chat-bubble", "user-message");
+            chatContainer.appendChild(chatBubble);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Simulate receiving a response after a short delay (for demonstration purposes)
+            setTimeout(function() {
+                const responseBubble = document.createElement("div");
+                responseBubble.textContent = "This is a sample response.";
+                responseBubble.classList.add("chat-bubble", "other-message");
+                chatContainer.appendChild(responseBubble);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }, 1000);
+
+            // Clear the message input
+            messageInput.value = "";
+        }
+    });
+
+    // Scroll to the bottom of the chatbox when new messages are added
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+});
+
+</script>
 </body>
 </html>
