@@ -1,25 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cse Roadmap</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div>
-        <h1>Our Features</h1>
-        <p>Cse Roadmap have amazing developer friendly features that you may love it much</p>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+<body class="bg-gray-100 font-sans">
+    <!-- navbar -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <img src="images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-xl"><span
+                    class="text-rose-700 font-serif font-bold">Cse</span>Roadmap</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a href=""></a></li>
+                <li tabindex="0">
+                    <details>
+                        <summary>Learning Paths</summary>
+                        <ul class="p-2">
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="features.html">Features</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="form-control">
+                <a href="join.html"><button
+                        style="padding: 5px; background-color: rgb(235, 172, 121); border-radius: 5px; color: black;">Login/Signup</button></a>
+            </div>
         </div>
     </div>
+    <div class="mt-24">
+        <h1 class="font-serif text-7xl text-center font-bold text-black">Our <span class="animate-pulse text-red-500">Features</span> that Fit</h1>
+        <p class="text-center text-yellow-950 mt-5">Cse Roadmap have amazing developer friendly features that you may love it much</p>
+    </div>
+    <!-- key fetures -->
+    <div class="container mx-auto mt-8 p-8 bg-white shadow-lg rounded-lg">
+
+        <h2 class="text-3xl font-semibold font-serif text-black text-center mb-6">Key Features</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Feature 1 -->
+            <div class="p-6 rounded-lg bg-slate-600">
+                <h3 class="text-xl font-semibold text-blue-400  mb-4">Responsive Design</h3>
+                <p>Our websites are designed to work seamlessly on various devices and screen sizes, ensuring a great
+                    user experience for everyone.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 rounded-lg bg-slate-600">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4">Interactive User Interface</h3>
+                <p>We create interactive and user-friendly interfaces that engage visitors and enhance their overall
+                    browsing experience.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class=" p-6 rounded-lg bg-slate-600">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4">Fast Loading Speed</h3>
+                <p>Our optimized code and efficient design practices ensure that your website loads quickly, keeping
+                    visitors engaged.</p>
+            </div>
+        </div>
+    </div>
+    <!-- another course -->
+    <!-- Features Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold font-serif text-black mb-6">Our Web Development Features</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Feature 1: HTML/CSS -->
+                <div class="p-6 rounded-lg shadow-lg bg-slate-900">
+                    <img src="images/html-css-beginners.jpg" alt="HTML/CSS Icon"
+                        class="w-40 h-40 mx-auto rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-2">HTML/CSS Development</h3>
+                    <p>Create stunning and responsive web pages with the power of HTML and CSS.</p>
+                </div>
+
+                <!-- Feature 2: JavaScript -->
+                <div class="p-6 rounded-lg shadow-lg bg-slate-900">
+                    <img src="images/javascript.png" alt="JavaScript Icon" class="w-40 h-40 mx-auto rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-2">JavaScript Interactivity</h3>
+                    <p>Add dynamic and interactive elements to your websites using JavaScript.</p>
+                </div>
+
+                <!-- Feature 3: React.js -->
+                <div class="p-6 rounded-lg shadow-lg bg-slate-900">
+                    <img src="images/react.js-img.png" alt="React.js Icon" class="w-44 h-40 mx-auto rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-2">React.js Development</h3>
+                    <p>Build modern and scalable web applications with the React.js library.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold font-serif text-black mb-6">Choose Your Web Development Course</h2>
+
+            <div class="flex justify-center">
+                <!-- Pricing Plan 1 -->
+                <div class="bg-slate-900 p-6 rounded-lg shadow-lg mx-4">
+                    <img src="images/basic.jpeg" alt="Basic Course" class="w-72 h-52 rounded mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Basic Course</h3>
+                    <p>Access to fundamental web development skills.</p>
+                    <p class="text-2xl font-bold mt-4">$99</p>
+                    <button onclick="alert('Successfully Enrolled.Your Journey started')"
+                        class="bg-blue-500 text-white px-6 py-2 mt-4 rounded-full hover:bg-blue-600 animate-pulse">Enroll Now</button>
+                </div>
+
+                <!-- Pricing Plan 2 -->
+                <div class=" bg-slate-900 p-6 rounded-lg shadow-lg mx-4">
+                    <img src="images/advance.webp" alt="Advanced Course" class="w-60 h-52 rounded mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Advanced Course</h3>
+                    <p>Advanced web development concepts and technologies.</p>
+                    <p class="text-2xl font-bold mt-4">$199</p>
+                    <button onclick="alert('Successfully Enrolled.Your Journey started')"
+                        class="bg-blue-500 text-white px-6 py-2 mt-4 rounded-full hover:bg-blue-600 animate-pulse">Enroll now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- primium fetures -->
+    <div>
+        <div></div>
+    </div>
+
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <div>
+            <span class="footer-title">Services</span>
+            <a href="resources.html" class="link link-hover">Resources</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Advertisement</a>
+            <a class="link link-hover">Web development</a>
+        </div>
+        <div>
+            <span class="footer-title">Company</span>
+            <a href="community.html" class="link link-hover">Community</a>
+            <a href="contact.html" class="link link-hover">Contact</a>
+            <a href="blog.html" class="link link-hover">Blog</a>
+        </div>
+        <div>
+            <span class="footer-title">Legal</span>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+            <span class="footer-title">Newsletter</span>
+            <div class="flex justify-center items-center gap-5 mb-4 mt-4">
+                <a href="https://www.facebook.com/mahafujahamed.dev"><img src="images/facebook.png"></a>
+                <a href="https://developers.google.com/profile/u/mahafuj"><img src="images/google.png" alt=""></a>
+                <a href="https://github.com/Duplicate-Yours"><img src="images/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/mahafuj-python/"><img src="images/linkedin.png" alt=""></a>
+            </div>
+            <div class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="relative">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+                    <button onclick="alert('Thanks for subscribing!')"
+                        class="btn bg-cyan-500 shadow-lg  shadow-cyan-500/50 absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
