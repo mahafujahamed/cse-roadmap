@@ -42,9 +42,7 @@
             @apply bg-gray-200 text-gray-800;
         }
     </style>
-
 </head>
-
 <body>
     <!-- navbar -->
     <div class="navbar bg-base-100">
@@ -117,7 +115,7 @@
         <!-- header end -->
         <!-- community cards -->
         <div class="container mx-auto flex gap-5">
-            <div class="animate-bounce">
+            <div class="animate-none">
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/community/download.jpeg" alt="Shoes" class="rounded-xl" />
@@ -129,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="animate-bounce">
+            <div class="animate-none">
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/community/card-1.jpg" alt="Shoes" class="rounded-xl" />
@@ -143,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="animate-bounce">
+            <div class="animate-pulse>
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/community/card-2.jpg" alt="Shoes" class="rounded-xl" />
@@ -199,12 +197,12 @@
     </div>
     <!-- Community Events -->
     <div class="mb-4">
-        <h2 class="text-xl font-bold mb-2">Upcoming Events</h2>
+        <h2 class="text-xl font-bold mb-2 ">Upcoming Events</h2>
         <!-- Example event cards -->
         <div class="bg-gray-200 p-4">
-            <h3 class="text-lg font-semibold">Event Title 1</h3>
-            <p>Date: January 15, 2023</p>
-            <p>Location: Event Venue</p>
+            <h3 class="text-lg font-semibold">Explore Github</h3>
+            <p>Date: December 15, 2023</p>
+            <p>Virtual: Google Meet</p>
             <!-- Add more event details as needed -->
         </div>
         <div class="bg-gray-200 p-4">
@@ -214,39 +212,9 @@
         </div>
         <!-- Add more event cards dynamically -->
     </div>
-    <!-- FAQ section -->
-    <div>
-        <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
-                Click to open this one and close others
-            </div>
-            <div class="collapse-content">
-                <p>hello</p>
-            </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
-                Click to open this one and close others
-            </div>
-            <div class="collapse-content">
-                <p>hello</p>
-            </div>
-        </div>
-        <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
-                Click to open this one and close others
-            </div>
-            <div class="collapse-content">
-                <p>hello</p>
-            </div>
-        </div>
-    </div>
-
+    <!-- FAQ -->
     <div class="container mx-auto py-12">
-        <h2 class="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
+        <h2 class="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- FAQ Item 1 -->
             <div class="bg-white rounded-lg p-6 shadow-md">
@@ -302,7 +270,7 @@
                     // Simulate receiving a response after a short delay (for demonstration purposes)
                     setTimeout(function () {
                         const responseBubble = document.createElement("div");
-                        responseBubble.textContent = "This is a sample response.";
+                        responseBubble.textContent = "Welcome to the CSERoadmap community!";
                         responseBubble.classList.add("chat-bubble", "other-message");
                         chatContainer.appendChild(responseBubble);
                         chatContainer.scrollTop = chatContainer.scrollHeight;
