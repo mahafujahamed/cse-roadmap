@@ -1,5 +1,5 @@
 const textElement = document.getElementById('typing-text');
-const textToType = 'Welcome tech world!';
+const textToType = 'idea';
 let index = 0;
 
 function typeText() {
