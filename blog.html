@@ -2,226 +2,352 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
-    <!-- navbar -->
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <img src="images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl"><span
-                    class="text-rose-700 font-serif font-bold">Cse</span>Roadmap</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="index.html">Home</a></li>
-                <li><a href=""></a></li>
-                <li tabindex="0">
-                    <details>
-                        <summary>Learning Paths</summary>
-                        <ul class="p-2">
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="features.html">Features</a></li>
-                        </ul>
-                    </details>
-                </li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="community.html">Community</a></li>
+  <!-- navbar -->
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a>Parent</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
             </ul>
-        </div>
-        <div class="navbar-end">
-            <div class="form-control">
-                <a href="join.html"><button
-                        style="padding: 5px; background-color: rgb(235, 172, 121); border-radius: 5px; color: black;">Login/Signup</button></a>
-            </div>
-        </div>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <img src="images/logo.png" alt="">
+      <a class="btn btn-ghost normal-case text-xl"><span
+          class="text-rose-700 font-serif font-bold">Cse</span>Roadmap</a>
     </div>
-    <!-- nav end -->
-    <div class="relative pt-2 lg:pt-2 min-h-screen">
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href=""></a></li>
+        <li tabindex="0">
+          <details>
+            <summary>Learning Paths</summary>
+            <ul class="p-2">
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="features.html">Features</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <div class="form-control">
+        <a href="join.html"><button
+            style="padding: 5px; background-color: rgb(235, 172, 121); border-radius: 5px; color: black;">Login/Signup</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- nav end -->
+  <div class="relative pt-2 lg:pt-2 min-h-screen">
 
-        <div class="bg-cover w-full flex justify-center items-center"
-            style="background-image: url('');">
-            <div class="w-full p-5 bg-opacity-40 backdrop-filter backdrop-blur-lg">
-                <div class="w-12/12 mx-auto rounded-2xl bg-white p-5 bg-opacity-40 backdrop-filter backdrop-blur-lg">
+    <div class="bg-cover w-full flex justify-center items-center" style="background-image: url('');">
+      <div class="w-full p-5 bg-opacity-40 backdrop-filter backdrop-blur-lg">
+        <div class="w-12/12 mx-auto rounded-2xl bg-white p-5 bg-opacity-40 backdrop-filter backdrop-blur-lg">
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-center px-2 mx-auto"
-                        id="blog-post-container">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-center px-2 mx-auto"
+            id="blog-post-container">
 
-                        <article id="blog-post-template"
-                            class="hidden bg-white p-6 mb-6 shadow transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border">
-                            <a target="_self" href="/blog/slug"
-                                class="absolute opacity-0 top-0 right-0 left-0 bottom-0"></a>
-                            <div class="relative mb-4 rounded-2xl">
-                                <img class="max-h-80 rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                    id="post-image" alt="">
-                                <div
-                                    class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="h-5 w-5 text-red-700">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                    </svg>
-                                    <span class="ml-1 text-sm text-slate-400">2</span>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-center w-full pb-4 mb-auto">
-                                <div class="author-info flex items-center">
-                                    
-                                    <div class="flex flex-1">
-                                        <div>
-                                            <p id="post-author" class="text-sm font-semibold "></p>
-                                            <p id="post-date" class="text-sm text-gray-500"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex justify-end">
-                                    <div class="text-sm flex items-center text-gray-500 ">
-                                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 class="font-medium text-xl leading-8">
-                                <a href="/blog/slug"
-                                    class="block relative group-hover:text-red-700 transition-colors duration-200 "
-                                    id="post-title">  
-                                </a>
-                            </h3>
-                            <div>
-                            </div>
-                        </article>
-
-                    </div>
+            <article id="blog-post-template"
+              class="hidden bg-white p-6 mb-6 shadow transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border">
+              <a target="_self" href="/blog/slug" class="absolute opacity-0 top-0 right-0 left-0 bottom-0"></a>
+              <div class="relative mb-4 rounded-2xl">
+                <img
+                  class="max-h-80 rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+                  id="post-image" alt="">
+                <div class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-5 w-5 text-red-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                  </svg>
+                  <span class="ml-1 text-sm text-slate-400">2</span>
                 </div>
-            </div>
-        </div>
-    </div>
-    <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
-        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <div>
-            <img src="images/logo.png" class="mr-5 h-10 sm:h-16" alt="logo" />
-              <p class="max-w-xs mt-4 text-sm text-gray-600">
-               Cse Roadmap is a platform where you can learn about computer science and engineering. We provide you with the best resources and tutorials to help you learn and grow in the field of computer science and engineering.
-              </p>
-              <div class="flex mt-8 space-x-6 text-gray-600">
-                <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Facebook </span>
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
-                  </svg>
-                </a>
-                <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Instagram </span>
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
-                  </svg>
-                </a>
-                <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Twitter </span>
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                  </svg>
-                </a>
-                <a class="hover:opacity-75" href="https://github.com/mahafujahamed" target="_blank" rel="noreferrer">
-                  <span class="sr-only"> GitHub </span>
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
-                  </svg>
-                </a>
-                <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Dribbble </span>
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clipRule="evenodd" />
-                  </svg>
-                </a>
               </div>
-            </div>
-            <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex justify-between items-center w-full pb-4 mb-auto">
+                <div class="author-info flex items-center">
+
+                  <div class="flex flex-1">
+                    <div>
+                      <p id="post-author" class="text-sm font-semibold "></p>
+                      <p id="post-date" class="text-sm text-gray-500"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <div class="text-sm flex items-center text-gray-500 ">
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <h3 class="font-medium text-xl leading-8">
+                <a href="/blog/slug" class="block relative group-hover:text-red-700 transition-colors duration-200 "
+                  id="post-title">  
+                </a>
+              </h3>
               <div>
-                <p class="font-medium">
-                  Company
-                </p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href> About </a>
-                  <a class="hover:opacity-75" href> Meet the Team </a>
-                  <a class="hover:opacity-75" href> History </a>
-                  <a class="hover:opacity-75" href> Careers </a>
-                </nav>
               </div>
-              <div>
-                <p class="font-medium">
-                  Services
-                </p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href>Web Builder</a>
-                  <a class="hover:opacity-75" href> Company Review </a>
-                  <a class="hover:opacity-75" href> Accounts Review </a>
-                  <a class="hover:opacity-75" href> HR Consulting </a>
-                  <a class="hover:opacity-75" href> SEO Optimisation </a>
-                </nav>
-              </div>
-              <div>
-                <p class="font-medium">
-                  Helpful Links
-                </p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href> Contact </a>
-                  <a class="hover:opacity-75" href> FAQs </a>
-                  <a class="hover:opacity-75" href> Live Chat </a>
-                </nav>
-              </div>
-              <div>
-                <p class="font-medium">
-                  Legal
-                </p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href> Privacy Policy </a>
-                  <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
-                  <a class="hover:opacity-75" href> Returns Policy </a>
-                  <a class="hover:opacity-75" href> Accessibility </a>
-                </nav>
-              </div>
-            </div>
+            </article>
+
           </div>
-          <p class="mt-8 text-xs text-gray-800">
-            © 2024 CSE Roadmap
-          </p>
         </div>
-      </footer>
-    <script src="blog.js"></script>
+      </div>
+    </div>
+  </div>
+  <!-- component -->
+  <div class="relative isolate pb-32 pt-24 sm:pt-32">
+    <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+      aria-hidden="true">
+      <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+      aria-hidden="true">
+      <div
+        class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-xl text-center">
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">history</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We changend history (legends)</p>
+      </div>
+      <div
+        class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+        <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+          <blockquote
+            class="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+            <p>“Learn from yesterday , live for taday , hop for tomorrow. The important thing is not to stop
+              questioning. ”</p>
+          </blockquote>
+          <figcaption
+            class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+            <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
+              src="https://insidetheperimeter.ca/wp-content/uploads/2015/11/Albert_einstein_by_zuzahin-d5pcbug-WikiCommons.jpg"
+              alt="">
+            <div class="flex-auto">
+              <div class="font-semibold">Albert Einstein</div>
+
+            </div>
+
+          </figcaption>
+        </figure>
+        <div class="space-y-8 xl:contents xl:space-y-0">
+          <div class="space-y-8 xl:row-span-2">
+            <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+              <blockquote class="text-gray-900">
+                <p>“Juventus is against racism and this club has to celebrate whith different religions and other
+                  people.”</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-gray-50"
+                  src="https://static.wikia.nocookie.net/442oonsorg/images/3/34/Juventus_logo.png/revision/latest/smart/width/250/height/250?cb=20210513093053"
+                  alt="">
+                <div>
+                  <div class="font-semibold">Juventus's old lady</div>
+
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- More testimonials... -->
+          </div>
+          <div class="space-y-8 xl:row-start-1">
+            <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+              <blockquote class="text-gray-900">
+                <p>“Everithing on earth is a game. A passing thing. We all end up dead. We all end up the same, don't we
+                  ?”</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-gray-50"
+                  src="data:image/jpeg;base64,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"
+                  alt="">
+                <div>
+                  <div class="font-semibold">Legend Pele</div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- More testimonials... -->
+          </div>
+        </div>
+        <div class="space-y-8 xl:contents xl:space-y-0">
+          <div class="space-y-8 xl:row-start-1">
+            <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+              <blockquote class="text-gray-900">
+                <p>“If there is a book that you want to read but it's not yet out, the you must be the one to write it.”
+                </p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-gray-50"
+                  src="https://hips.hearstapps.com/hmg-prod/images/william-shakespeare-194895-1-402.jpg" alt="">
+                <div>
+                  <div class="font-semibold">William Shakespeare</div>
+
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- More testimonials... -->
+          </div>
+          <div class="space-y-8 xl:row-span-2">
+            <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+              <blockquote class="text-gray-900">
+                <p>“Lots of legends, lots of people have come before me, but this is my time.”</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-gray-50"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5OL5Z5J8CdB941RIOAypIxMJHHlbI_cCYIQ&usqp=CAU"
+                  alt="">
+                <div>
+                  <div class="font-semibold">Usain Bolt</div>
+
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- More testimonials... -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+    <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+          <img src="images/logo.png" class="mr-5 h-10 sm:h-16" alt="logo" />
+          <p class="max-w-xs mt-4 text-sm text-gray-600">
+            Cse Roadmap is a platform where you can learn about computer science and engineering. We provide you with
+            the best resources and tutorials to help you learn and grow in the field of computer science and
+            engineering.
+          </p>
+          <div class="flex mt-8 space-x-6 text-gray-600">
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Facebook </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Instagram </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Twitter </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href="https://github.com/mahafujahamed" target="_blank" rel="noreferrer">
+              <span class="sr-only"> GitHub </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Dribbble </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium">
+              Company
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> About </a>
+              <a class="hover:opacity-75" href> Meet the Team </a>
+              <a class="hover:opacity-75" href> History </a>
+              <a class="hover:opacity-75" href> Careers </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+              Services
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href>Web Builder</a>
+              <a class="hover:opacity-75" href> Company Review </a>
+              <a class="hover:opacity-75" href> Accounts Review </a>
+              <a class="hover:opacity-75" href> HR Consulting </a>
+              <a class="hover:opacity-75" href> SEO Optimisation </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+              Helpful Links
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> Contact </a>
+              <a class="hover:opacity-75" href> FAQs </a>
+              <a class="hover:opacity-75" href> Live Chat </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+              Legal
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> Privacy Policy </a>
+              <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
+              <a class="hover:opacity-75" href> Returns Policy </a>
+              <a class="hover:opacity-75" href> Accessibility </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="mt-8 text-xs text-gray-800">
+        © 2024 CSE Roadmap
+      </p>
+    </div>
+  </footer>
+  <script src="blog.js"></script>
 </body>
 
 </html>

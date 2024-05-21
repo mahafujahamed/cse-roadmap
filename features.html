@@ -7,11 +7,53 @@
     <title>Cse Roadmap</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        @keyframes word {
+          0% {
+            transform: translateY(100%);
+          }
+          15% {
+            transform: translateY(-10%);
+            animation-timing-function: ease-out;
+          }
+        
+          20% {
+            transform: translateY(0);
+          }
+        
+          40%,
+          100% {
+            transform: translateY(-110%);
+          }
+        }
+        
+        .animate-word {
+          animation: word 7s infinite;
+        }
+        .animate-word-delay-1 {
+          animation: word 7s infinite;
+          animation-delay: -1.4s;
+        }
+        .animate-word-delay-2 {
+          animation: word 7s infinite;
+          animation-delay: -2.8s;
+        }
+        .animate-word-delay-3 {
+          animation: word 7s infinite;
+          animation-delay: -4.2s;
+        }
+        .animate-word-delay-4 {
+          animation: word 7s infinite;
+          animation-delay: -5.6s;
+        }
+        
+        </style>
 </head>
 
 <body class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 font-sans">
     <!-- navbar -->
-    <div class="navbar bg-base-100">
+    <div class="navbar">
         <div class="navbar-start">
             <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -64,12 +106,25 @@
             </div>
         </div>
     </div>
-    <div class="mt-24">
-        <h1 class="font-serif text-7xl text-center font-bold text-black">Our <span class="animate-pulse text-red-500">Features</span> that Fit</h1>
-        <p class="text-center text-yellow-950 mt-5">Cse Roadmap have amazing developer friendly features that you may love it much</p>
-    </div>
+    <div class="flex min-h-screen items-center justify-center font-bold text-white">
+        <div class=" text-center space-y-12">
+            <div class="text-center text-5xl font-bold text-lime-700">
+              Services offered
+              <div class="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
+              <span class="animate-word col-span-full row-span-full">Flutter</span>
+              <span class="animate-word-delay-1 col-span-full row-span-full">Django</span>
+              <span class="animate-word-delay-2 col-span-full row-span-full">Website</span>
+              <span class="animate-word-delay-3 col-span-full row-span-full">VueJS</span>
+              <span class="animate-word-delay-4 col-span-full row-span-full">NuxtJS</span>
+              </div>
+          </div>
+          <p class=" text-white">
+              Want to hire me for work ping me <a class="underline" href="mailto:ponnamkarthik3@gmail.com">mail here</a>
+          </p>
+        </div>
+      </div>
     <!-- key fetures -->
-    <div class="container mx-auto mt-8 p-8 bg-white shadow-lg rounded-lg">
+    <div class="container mx-auto mt-8 p-8 shadow-lg rounded-lg">
 
         <h2 class="text-3xl font-semibold font-serif text-black text-center mb-6">Key Features</h2>
 
