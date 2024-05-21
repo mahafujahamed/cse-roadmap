@@ -1,11 +1,11 @@
-const blogPosts = [  // Replace with your JSON data (optional)
+const blogPosts = [  
   {
     "id": 1,
-    "title": "Instant Help at Your Fingertips",
+    "title": "Boost your github knowledge",
     "date": "March 19, 2024",
-    "image": "images/blog/blog-3.jpg",
-    "author": "Morris Muthigani",
-    "authorImage": "images/authors/morris.jpg"
+    "image": "images/blog1.jpg",
+    "author": "Mahafuj Ahamed",
+    "authorImage": "images/mahafuj12.jpeg"
   },
   {
     "id": 2,
@@ -69,18 +69,8 @@ function loadBlogPosts() {
     if (authorInfo) { // Check if element exists
       authorInfo.insertBefore(authorImage, authorInfo.firstChild);
     }
-
-    // Approach 2: Inserting within a specific element (assuming an element with ID 'author-info')
-    // const authorInfo = blogCard.querySelector('#author-info');
-    // authorInfo.appendChild(authorImage);  // Uncomment if using this approach
-
-    // Add any additional content based on your JSON data structure
-    // ... (e.g., display post excerpt or category)
-
-    // Append the completed blog card to the container
     blogCardContainer.appendChild(blogCard);
   });
 }
 
-// Ensure script runs after DOM loads
 window.addEventListener('DOMContentLoaded', loadBlogPosts);
