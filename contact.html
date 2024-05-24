@@ -11,56 +11,41 @@
 
 <body>
     <!-- navbar -->
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
+    <nav class="bg-white shadow-lg">
+        <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl flex font-bold text-gray-800 md:text-3xl">
+                    <img src="images/logo.png" alt="">
+                    <a href="index.html" class="mt-4 ms-3">CSE Roadmap</a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button"
+                        class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden"
+                                d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z" />
+                            <path
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <img src="images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl"><span class="text-rose-700">Cse</span><span
-                    class="text-lime-500">Roadmap</span></a>
+            <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+                <a href="index.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Home</a>
+                <a href="features.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Features</a>
+                <a href="resources.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Resources</a>
+                <a href="mentors.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Mentors</a>
+                <a href="blog.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Blog</a>
+                <a href="contact.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Contact</a>
+            </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="index.html">Home</a></li>
-                <li><a href=""></a></li>
-                <li tabindex="0">
-                    <details>
-                        <summary>Learning Paths</summary>
-                        <ul class="p-2">
-                            <li><a href="features.html">Features</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                        </ul>
-                    </details>
-                </li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <a href="join.html" class="btn">Join Now</a>
-        </div>
-    </div>
+    </nav>
     <!-- nav end -->
     <!-- hero -->
     <!-- component -->

@@ -7,181 +7,96 @@
     <title>Cse Roadmap</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-
-        @keyframes word {
-          0% {
-            transform: translateY(100%);
-          }
-          15% {
-            transform: translateY(-10%);
-            animation-timing-function: ease-out;
-          }
-        
-          20% {
-            transform: translateY(0);
-          }
-        
-          40%,
-          100% {
-            transform: translateY(-110%);
-          }
-        }
-        
-        .animate-word {
-          animation: word 7s infinite;
-        }
-        .animate-word-delay-1 {
-          animation: word 7s infinite;
-          animation-delay: -1.4s;
-        }
-        .animate-word-delay-2 {
-          animation: word 7s infinite;
-          animation-delay: -2.8s;
-        }
-        .animate-word-delay-3 {
-          animation: word 7s infinite;
-          animation-delay: -4.2s;
-        }
-        .animate-word-delay-4 {
-          animation: word 7s infinite;
-          animation-delay: -5.6s;
-        }
-        
-        </style>
+    
 </head>
 
 <body class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 font-sans">
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                </ul>
+    <nav class="bg-white shadow-lg">
+        <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl flex font-bold text-gray-800 md:text-3xl">
+                    <img src="images/logo.png" alt="">
+                    <a href="index.html" class="mt-4 ms-3">CSE Roadmap</a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button"
+                        class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden"
+                                d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z" />
+                            <path
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <img src="images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-xl"><span
-                    class="text-rose-700 font-serif font-bold">Cse</span>Roadmap</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="index.html">Home</a></li>
-                <li><a href=""></a></li>
-                <li tabindex="0">
-                    <details>
-                        <summary>Learning Paths</summary>
-                        <ul class="p-2">
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="features.html">Features</a></li>
-                        </ul>
-                    </details>
-                </li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <div class="form-control">
-                <a href="join.html"><button
-                        style="padding: 5px; background-color: rgb(235, 172, 121); border-radius: 5px; color: black;">Login/Signup</button></a>
+            <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+                <a href="index.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Home</a>
+                <a href="features.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Features</a>
+                <a href="resources.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Resources</a>
+                <a href="mentors.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Mentors</a>
+                <a href="blog.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Blog</a>
+                <a href="contact.html"
+                    class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Contact</a>
             </div>
         </div>
+    </nav>
+    <div>
+        <aside class="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+            <div class="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
+                <div class="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
+                    <h2 class="text-4xl font-bold sm:text-5xl">
+                        Download Now
+                        <span class="hidden sm:block text-4xl">
+                            Lorem Ipsum
+                        </span>
+                    </h2>
+
+                    <a class="inline-flex text-white items-center px-6 py-3 font-medium bg-rose-500 rounded-lg hover:opacity-75"
+                        href="404.html">
+                        <svg fill="white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd"
+                            clipRule="evenodd">
+                            <path
+                                d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z" />
+                        </svg>
+                        &nbsp; Download now
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+                <img class="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" />
+            </div>
+        </aside>
+
+        <div class="grid  place-items-center sm:mt-20">
+            <img class="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" />
+        </div>
+
+
+        <h1 class="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2 text-center mx-6 sm:mx-48 gap-x-5 gap-y-5 my-10">
+
+            <div class="border border-2 shadow-lg rounded-lg py-20">Workspace 1</div>
+            <div class="border border-2 shadow-lg rounded-lg py-20">Workspace 2</div>
+            <div class="border border-2 shadow-lg rounded-lg py-20">Workspace 3</div>
+            <div class="border border-2 shadow-lg rounded-lg py-20">Workspace 3</div>
+            <div class="border border-2 shadow-lg rounded-lg py-20">Workspace 5</div>
+            <div class="border border-2 shadow-lg rounded-lg py-20">Workspace 6</div>
+
+        </div>
+
+
+        <script data-name="BMC-Widget" data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="sahilnetic"
+            data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00" data-position="Right"
+            data-x_margin="18" data-y_margin="18"></script>
     </div>
-    <div class="flex min-h-screen items-center justify-center font-bold text-white">
-        <div class=" text-center space-y-12">
-            <div class="text-center text-5xl font-bold text-lime-700">
-              Services offered
-              <div class="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
-              <span class="animate-word col-span-full row-span-full">Flutter</span>
-              <span class="animate-word-delay-1 col-span-full row-span-full">Django</span>
-              <span class="animate-word-delay-2 col-span-full row-span-full">Website</span>
-              <span class="animate-word-delay-3 col-span-full row-span-full">VueJS</span>
-              <span class="animate-word-delay-4 col-span-full row-span-full">NuxtJS</span>
-              </div>
-          </div>
-          <p class=" text-white">
-              Want to hire me for work ping me <a class="underline" href="mailto:ponnamkarthik3@gmail.com">mail here</a>
-          </p>
-        </div>
-      </div>
-    <!-- key fetures -->
-    <div class="container mx-auto mt-8 p-8 shadow-lg rounded-lg">
-
-        <h2 class="text-3xl font-semibold font-serif text-black text-center mb-6">Key Features</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Feature 1 -->
-            <div class="p-6 rounded-lg bg-slate-600">
-                <h3 class="text-xl font-semibold text-blue-400  mb-4">Responsive Design</h3>
-                <p>Our websites are designed to work seamlessly on various devices and screen sizes, ensuring a great
-                    user experience for everyone.</p>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="p-6 rounded-lg bg-slate-600">
-                <h3 class="text-xl font-semibold text-blue-400 mb-4">Interactive User Interface</h3>
-                <p>We create interactive and user-friendly interfaces that engage visitors and enhance their overall
-                    browsing experience.</p>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class=" p-6 rounded-lg bg-slate-600">
-                <h3 class="text-xl font-semibold text-blue-400 mb-4">Fast Loading Speed</h3>
-                <p>Our optimized code and efficient design practices ensure that your website loads quickly, keeping
-                    visitors engaged.</p>
-            </div>
-        </div>
-    </div>
-    <!-- another course -->
-    <!-- Features Section -->
-    <section class=" py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold font-serif text-black mb-6">Our Web Development Features</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Feature 1: HTML/CSS -->
-                <div class="p-6 rounded-lg shadow-lg">
-                    <img src="images/html-css-beginners.jpg" alt="HTML/CSS Icon"
-                        class="w-40 h-40 mx-auto rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-yellow-600 mb-2">HTML/CSS Development</h3>
-                    <p>Create stunning and responsive web pages with the power of HTML and CSS.</p>
-                </div>
-
-                <!-- Feature 2: JavaScript -->
-                <div class="p-6 rounded-lg shadow-lg">
-                    <img src="images/javascript.png" alt="JavaScript Icon" class="w-40 h-40 mx-auto rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-yellow-600 mb-2">JavaScript Interactivity</h3>
-                    <p>Add dynamic and interactive elements to your websites using JavaScript.</p>
-                </div>
-
-                <!-- Feature 3: React.js -->
-                <div class="p-6 rounded-lg shadow-lg ">
-                    <img src="images/react.js-img.png" alt="React.js Icon" class="w-44 h-40 mx-auto rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-yellow-600 mb-2">React.js Development</h3>
-                    <p>Build modern and scalable web applications with the React.js library.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Pricing Section -->
     <div class="min-h-screen flex justify-center items-center">
