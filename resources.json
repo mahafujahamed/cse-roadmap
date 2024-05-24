@@ -1,18 +1,58 @@
 [
     {
-      "image": "image1.jpg",
-      "title": "Resource 1 Title",
-      "view_link": "https://www.example.com/resource1"
+      "image": "images/resources/roadmap.jpg",
+      "title": "Introduction to Programming using Python",
+      "view_link": "https://www.coursera.org/learn/python-programming-intro"
     },
     {
-      "image": "image2.jpg",
-      "title": "Resource 2 Title",
-      "view_link": "https://www.example.com/resource2"
+      "image": "images/resources/developer.jpg",
+      "title": "Learn to Program: The Fundamentals",
+      "view_link": "https://www.coursera.org/learn/learn-to-program"
     },
     {
-      "image": "image3.jpg",
-      "title": "Resource 3 Title",
-      "view_link": "https://www.example.com/resource3"
+      "image": "images/resources/design.jpg",
+      "title": "CS50's Introduction to Computer Science",
+      "view_link": " https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science"
+    },
+    {
+      "image": "images/resources/web.jpg",
+      "title": "Programming for Everybody",
+      "view_link": "https://www.coursera.org/learn/python"
+    },
+    {
+      "image": "images/resources/cheat-sheet.jpg",
+      "title": "Data Structures and Algorithms in Python",
+      "view_link": "https://www.edx.org/masters/micromasters/ucsandiegox-algorithms-and-data-structures"
+    },
+    {
+      "image": "images/blogweb.jpg",
+      "title": " Introduction to Algorithms",
+      "view_link": "https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230"
+    },
+    {
+      "image": "images/programmerweb.jpg",
+      "title": "The Web Developer Bootcamp 2023",
+      "view_link": "https://www.udemy.com/course/the-web-developer-bootcamp/"
+    },
+    {
+      "image": "images/free.jpg",
+      "title": "Front-End Web Development with React",
+      "view_link": "https://www.coursera.org/specializations/front-end-development-using-react-specialization"
+    },
+    {
+      "image": "images/university.jpg",
+      "title": "Github Projects",
+      "view_link": "https://github.com/mahafujahamed"
+    },
+    {
+      "image": "images/resources/websites.jpg",
+      "title": "Introduction to Relational Databases ",
+      "view_link": "https://www.edx.org/learn/sql/universitat-politecnica-de-valencia-introduction-to-sql-and-relational-databases"
+    },
+    {
+      "image": "images/resources/dev.jpg",
+      "title": "SQL for Everybody Specialization",
+      "view_link": "https://www.coursera.org/specializations/postgresql-for-everybody"
     }
     
   ]
