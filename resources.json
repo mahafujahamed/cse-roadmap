@@ -1,0 +1,19 @@
+[
+    {
+      "image": "image1.jpg",
+      "title": "Resource 1 Title",
+      "view_link": "https://www.example.com/resource1"
+    },
+    {
+      "image": "image2.jpg",
+      "title": "Resource 2 Title",
+      "view_link": "https://www.example.com/resource2"
+    },
+    {
+      "image": "image3.jpg",
+      "title": "Resource 3 Title",
+      "view_link": "https://www.example.com/resource3"
+    }
+    
+  ]
+  
