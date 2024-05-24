@@ -45,6 +45,8 @@
                         class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Blog</a>
                     <a href="contact.html"
                         class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Contact</a>
+                    <a href="join.html"
+                        class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Profile</a>
                 </div>
             </div>
         </nav>
@@ -53,14 +55,16 @@
                 <div>
                     <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">Build Your New <span id="typing-text"
                             class="text-indigo-600"></span></h2>
-                    <p class="mt-2 text-sm text-gray-500 md:text-base">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Blanditiis commodi cum cupiditate ducimus, fugit harum id necessitatibus odio
-                        quam quasi, quibusdam rem tempora voluptates. Cumque debitis dignissimos id quam vel!</p>
+                    <p class="mt-2 text-sm text-gray-500 md:text-base">Welcome to CSE Roadmap, your one-stop resource
+                        for navigating the exciting world of Computer Science Engineering! Whether you're a beginner
+                        taking your first steps or a seasoned student seeking to solidify your foundation, we've crafted
+                        a roadmap to guide you through the essential knowledge and skills needed to excel in this
+                        dynamic field.</p>
                     <div class="flex justify-center lg:justify-start mt-6">
                         <a class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
-                            href="404.html">Get Started</a>
+                            href="join.html">Get Started</a>
                         <a class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
-                            href="#">Learn More</a>
+                            href="features.html">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +79,7 @@
     <!-- nav end -->
     <!-- component -->
     <!-- component -->
-    
+
     <!-- our expert team -->
     <div>
         <div>
@@ -331,13 +335,17 @@
                     Subscribe</h1>
                 <p class="text-base leading-normal text-gray-600 text-center xl:text-left">Whether article spirits new
                     her covered hastily sitting her. Money witty books nor son add.</p>
+
                 <div class="flex items-stretch mt-12">
-                    <input
-                        class="bg-gray-100 rounded-lg rounded-r-none text-base leading-none text-gray-800 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500"
-                        type="email" placeholder="Your Email" />
-                    <button
-                        class="w-32 rounded-l-none hover:bg-indigo-600 bg-indigo-700 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700">subscribe</button>
+                    <form id="subscribe-form">
+                        <label class="mb-3" for="email">Email Address:</label>
+                        <input
+                            class="bg-gray-100 rounded-lg mt-3 rounded-r-none text-base leading-none text-gray-800 p-5 w-4/5 border border-transparent focus:outline-none focus:border-gray-500"
+                            type="email" id="email" name="email" required>
+                        <button  class="w-32 mt-3 rounded-l-none hover:bg-indigo-600 bg-indigo-700 rounded text-base font-medium leading-none text-white p-5 uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700" type="submit">Subscribe</button>
+                    </form>
                 </div>
+                <div class="font-serif text-red-500" id="subscribe-message"></div>
             </div>
         </div>
 
@@ -450,6 +458,7 @@
         </footer>
         <!-- script js -->
         <script src="index.js"></script>
+        <script src="subscribe.js"></script>
 </body>
 
 </html>
