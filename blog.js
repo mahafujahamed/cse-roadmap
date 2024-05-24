@@ -9,27 +9,27 @@ const blogPosts = [
   },
   {
     "id": 2,
-    "title": "Exploring the Power of AI",
+    "title": "Do you know Web Tecnologies",
     "date": "April 5, 2024",
-    "image": "images/blog/blog-4.jpg",
-    "author": "Jane Doe",
-    "authorImage": "images/blog/steve.jpg"
+    "image": "images/blogweb.jpg",
+    "author": "sumaiya",
+    "authorImage": "images/sumaya.jpg"
   },
   {
     "id": 2,
-    "title": "Exploring the Power of AI",
+    "title": "Programmers Guidline",
     "date": "April 5, 2024",
     "image": "images/blog/blog-4.jpg",
     "author": "Jane Doe",
-    "authorImage": "images/blog/steve.jpg"
+    "authorImage": "images/blog/steve.jpeg"
   },
   {
     "id": 2,
-    "title": "Exploring the Power of AI",
+    "title": "Programmers Guidline",
     "date": "April 5, 2024",
-    "image": "images/blog/blog-4.jpg",
-    "author": "Jane Doe",
-    "authorImage": "images/blog/steve.jpg"
+    "image": "images/programmerweb.jpg",
+    "author": "Mr. Amit Chakraborty",
+    "authorImage": "images/amit.jpeg"
   },
   {
     "id": 3,
@@ -46,27 +46,24 @@ function loadBlogPosts() {
 
   blogPosts.forEach(post => {
     const blogCard = document.getElementById('blog-post-template').cloneNode(true);
-    blogCard.classList.remove('hidden'); // Ensure visibility
+    blogCard.classList.remove('hidden'); 
 
-    // Set content using ID references
+    
     blogCard.querySelector('#post-title').textContent = post.title;
-    blogCard.querySelector('#post-image').src = post.image; // Adjust path if needed
-    blogCard.querySelector('#post-author').textContent = post.author || ""; // Set empty string if author is missing
-
-    // Format and display date (replace with your preferred format)
+    blogCard.querySelector('#post-image').src = post.image; 
+    blogCard.querySelector('#post-author').textContent = post.author || ""; 
+    
     const date = new Date(post.date);
-    const formattedDate = date.toLocaleDateString(); // Adjust format if needed (e.g., MM/DD/YYYY)
+    const formattedDate = date.toLocaleDateString(); 
     blogCard.querySelector('#post-date').textContent = formattedDate;
 
-    // Add author image
+    
     const authorImage = document.createElement('img');
-    authorImage.classList.add('h-10', 'w-10', 'rounded-full', 'object-cover', 'mr-2'); // Adjust styles as needed
-    authorImage.src = post.authorImage; // Access the authorImage property from the JSON data
+    authorImage.classList.add('h-10', 'w-10', 'rounded-full', 'object-cover', 'mr-2'); 
+    authorImage.src = post.authorImage; 
 
-    // Insert author image before author name (choose one approach)
-    // Approach 1: Using class name (assuming a class for author information)
     const authorInfo = blogCard.querySelector('.author-info');
-    if (authorInfo) { // Check if element exists
+    if (authorInfo) { 
       authorInfo.insertBefore(authorImage, authorInfo.firstChild);
     }
     blogCardContainer.appendChild(blogCard);
